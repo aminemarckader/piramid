@@ -1,6 +1,5 @@
 import React from "react";
 import { GiCommercialAirplane, GiCargoShip, GiRoad } from "react-icons/gi";
-import { ImRoad } from "react-icons/im";
 export default function Featured() {
   return (
     <section id="featured" className="featured">
@@ -12,7 +11,7 @@ export default function Featured() {
                 <GiCargoShip />
               </i>
               <h3>
-                <a href>Lorem Ipsum</a>
+                <a href="#">Lorem Ipsum</a>
               </h3>
               <p>
                 Voluptatum deleniti atque corrupti quos dolores et quas
@@ -26,7 +25,7 @@ export default function Featured() {
                 <GiCommercialAirplane />
               </i>
               <h3>
-                <a href>Dolor Sitema</a>
+                <a href="#">Dolor Sitema</a>
               </h3>
               <p>
                 Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -40,7 +39,7 @@ export default function Featured() {
                 <GiRoad />
               </i>
               <h3>
-                <a href>Sed ut perspiciatis</a>
+                <a href="#">Sed ut perspiciatis</a>
               </h3>
               <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse

@@ -5,18 +5,16 @@ export default function Header() {
     <header id="header" className="d-flex align-items-center">
       <div className="container d-flex justify-content-between align-items-center">
         <div className="logo">
+          {/* <h1><a href="index.html">Eterna</a></h1> */}
+          {/* Uncomment below if you prefer to use an image logo */}
           <a href="index.html">
-            <img
-              src="assets/img/logo.png"
-              alt="company logo"
-              className="img-fluid"
-            />
+            <img src="assets/img/logo.png" alt className="img-fluid" />
           </a>
         </div>
         <nav id="navbar" className="navbar">
           <ul>
             <li>
-              <a className="active" href="/">
+              <a className="active" href="index.html">
                 Home
               </a>
             </li>
@@ -48,8 +46,7 @@ export default function Header() {
                 </li>
                 <li className="dropdown">
                   <a href="#">
-                    <span>Deep Drop Down</span>
-                    {"{"}" "{"}"}
+                    <span>Deep Drop Down</span>{" "}
                     <i className="bi bi-chevron-right" />
                   </a>
                   <ul>
@@ -85,8 +82,9 @@ export default function Header() {
               <a href="contact.html">Contact</a>
             </li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle" />
+          <i className="bi mobile-nav-toggle bi-list" />
         </nav>
+        {/* .navbar */}
       </div>
     </header>
   );

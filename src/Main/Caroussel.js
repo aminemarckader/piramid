@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Caroussel() {
   return (
-    <section id="hero" className>
+    <section id="hero">
       <div className="hero-container">
         <div
           id="heroCarousel"
@@ -11,14 +11,14 @@ export default function Caroussel() {
           data-bs-ride="carousel"
         >
           <ol className="carousel-indicators" id="hero-carousel-indicators">
-            <li data-bs-target="#heroCarousel" data-bs-slide-to={0} className />
+            <li data-bs-target="#heroCarousel" data-bs-slide-to={0} />
             <li
               data-bs-target="#heroCarousel"
               data-bs-slide-to={1}
               className="active"
               aria-current="true"
             />
-            <li data-bs-target="#heroCarousel" data-bs-slide-to={2} className />
+            <li data-bs-target="#heroCarousel" data-bs-slide-to={2} />
           </ol>
           <div className="carousel-inner" role="listbox">
             {/* Slide 1 */}
@@ -39,7 +39,10 @@ export default function Caroussel() {
                     tempore modi architecto.
                   </p>
                   <a
-                    href
+                    onClick={() => {
+                      alert("clicked");
+                    }}
+                    href="#"
                     className="btn-get-started animate__animated animate__fadeInUp"
                   >
                     Read More
@@ -65,7 +68,10 @@ export default function Caroussel() {
                     tempore modi architecto.
                   </p>
                   <a
-                    href
+                    onClick={() => {
+                      alert("clicked");
+                    }}
+                    href="#"
                     className="btn-get-started animate__animated animate__fadeInUp"
                   >
                     Read More
@@ -91,7 +97,10 @@ export default function Caroussel() {
                     tempore modi architecto.
                   </p>
                   <a
-                    href
+                    onClick={() => {
+                      alert("clicked");
+                    }}
+                    href="#"
                     className="btn-get-started animate__animated animate__fadeInUp"
                   >
                     Read More

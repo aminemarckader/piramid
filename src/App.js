@@ -3,6 +3,8 @@ import Caroussel from "./Main/Caroussel";
 import Header from "./Main/Header";
 import TopBar from "./Main/TopBar";
 import Featured from "./Main/Featured";
+import BackTop from "./Main/BackTop";
+import AboutSection from "./Main/AboutSection";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Header />
       <Caroussel />
       <Featured />
+      <AboutSection />
+      <BackTop />
     </>
   );
 }
