@@ -5,6 +5,7 @@ import TopBar from "./Main/TopBar";
 import Featured from "./Main/Featured";
 import BackTop from "./Main/BackTop";
 import AboutSection from "./Main/AboutSection";
+import Location from "./Main/Location";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Caroussel />
       <Featured />
       <AboutSection />
+      <Location />
       <BackTop />
     </>
   );
