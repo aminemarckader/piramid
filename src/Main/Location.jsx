@@ -21,7 +21,7 @@ export default function SimpleMap() {
         defaultZoom={defaultProps.zoom}
       >
         <Location
-          lat={36.73345065338286,}
+          lat={36.73345065338286}
           lng={3.0608720707063712}
           text="Piramid Group"
         />
