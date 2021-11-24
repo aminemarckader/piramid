@@ -6,8 +6,8 @@ const Location = ({ text }) => <div>{text}</div>;
 export default function SimpleMap() {
   const defaultProps = {
     center: {
-      lat: 10.99835602,
-      lng: 77.01502627,
+      lat: 36.73345065338286,
+      lng: 3.0608720707063712,
     },
     zoom: 11,
   };
@@ -20,7 +20,11 @@ export default function SimpleMap() {
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
-        <Location lat={59.955413} lng={30.337844} text="My Marker" />
+        <Location
+          lat={36.73345065338286,}
+          lng={3.0608720707063712}
+          text="Piramid Group"
+        />
       </GoogleMapReact>
     </div>
   );
