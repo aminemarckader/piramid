@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header id="header" className="d-flex align-items-center">
@@ -8,78 +8,80 @@ export default function Header() {
           {/* <h1><a href="index.html">Eterna</a></h1> */}
           {/* Uncomment below if you prefer to use an image logo */}
           <a href="index.html">
-            <img src="assets/img/logo.png" alt className="img-fluid" />
+            <img
+              src="assets/img/logo.png"
+              alt="company logo"
+              className="img-fluid"
+            />
           </a>
         </div>
         <nav id="navbar" className="navbar">
           <ul>
             <li>
-              <a className="active" href="index.html">
-                Home
-              </a>
+              <Link to="/">Acceuil</Link>
             </li>
             <li>
-              <a href="about.html">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="services.html">Services</a>
+              <Link to="services">Services</Link>
             </li>
-            <li>
+            {/* <li>
               <a href="portfolio.html">Portfolio</a>
-            </li>
+            </li> */}
             <li>
-              <a href="team.html">Team</a>
+              <Link to="/team">Team</Link>
             </li>
-            <li>
+            {/* <li>
               <a href="pricing.html">Pricing</a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="blog.html">Blog</a>
-            </li>
+            </li> */}
             <li className="dropdown">
-              <a href="#">
+              <Link to="/">
                 <span>Drop Down</span> <i className="bi bi-chevron-down" />
-              </a>
+              </Link>
               <ul>
                 <li>
-                  <a href="#">Drop Down 1</a>
+                  <Link to="/">Drop Down 1</Link>
                 </li>
                 <li className="dropdown">
-                  <a href="#">
+                  <Link to="/">
                     <span>Deep Drop Down</span>{" "}
                     <i className="bi bi-chevron-right" />
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="#">Deep Drop Down 1</a>
+                      <Link to="/">Deep Drop Down 1</Link>
                     </li>
                     <li>
-                      <a href="#">Deep Drop Down 2</a>
+                      <Link to="/">Deep Drop Down 2</Link>
                     </li>
                     <li>
-                      <a href="#">Deep Drop Down 3</a>
+                      <Link to="/">Deep Drop Down 3</Link>
                     </li>
                     <li>
-                      <a href="#">Deep Drop Down 4</a>
+                      <Link to="/">Deep Drop Down 4</Link>
                     </li>
                     <li>
-                      <a href="#">Deep Drop Down 5</a>
+                      <Link to="/">Deep Drop Down 5</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#">Drop Down 2</a>
+                  <Link to="/">Drop Down 2</Link>
                 </li>
                 <li>
-                  <a href="#">Drop Down 3</a>
+                  <Link to="/">Drop Down 3</Link>
                 </li>
                 <li>
-                  <a href="#">Drop Down 4</a>
+                  <Link to="/">Drop Down 4</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <Link to="contact">Contact Us</Link>
             </li>
           </ul>
           <i className="bi mobile-nav-toggle bi-list" />

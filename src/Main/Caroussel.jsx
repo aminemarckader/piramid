@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 export default function Caroussel() {
   return (
     <section id="hero">
@@ -38,15 +39,15 @@ export default function Caroussel() {
                     doloremque accusamus repellendus deleniti vel. Minus et
                     tempore modi architecto.
                   </p>
-                  <a
+                  <Link
                     onClick={() => {
                       alert("clicked");
                     }}
-                    href="#"
+                    to="/"
                     className="btn-get-started animate__animated animate__fadeInUp"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -67,15 +68,15 @@ export default function Caroussel() {
                     doloremque accusamus repellendus deleniti vel. Minus et
                     tempore modi architecto.
                   </p>
-                  <a
+                  <Link
                     onClick={() => {
                       alert("clicked");
                     }}
-                    href="#"
+                    to="/"
                     className="btn-get-started animate__animated animate__fadeInUp"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -96,22 +97,22 @@ export default function Caroussel() {
                     doloremque accusamus repellendus deleniti vel. Minus et
                     tempore modi architecto.
                   </p>
-                  <a
+                  <Link
                     onClick={() => {
                       alert("clicked");
                     }}
-                    href="#"
+                    to="/"
                     className="btn-get-started animate__animated animate__fadeInUp"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-          <a
+          <HashLink
             className="carousel-control-prev"
-            href="#heroCarousel"
+            to="#heroCarousel"
             role="button"
             data-bs-slide="prev"
           >
@@ -119,10 +120,10 @@ export default function Caroussel() {
               className="carousel-control-prev-icon bi bi-chevron-left"
               aria-hidden="true"
             />
-          </a>
-          <a
+          </HashLink>
+          <HashLink
             className="carousel-control-next"
-            href="#heroCarousel"
+            to="#heroCarousel"
             role="button"
             data-bs-slide="next"
           >
@@ -130,7 +131,7 @@ export default function Caroussel() {
               className="carousel-control-next-icon bi bi-chevron-right"
               aria-hidden="true"
             />
-          </a>
+          </HashLink>
         </div>
       </div>
     </section>

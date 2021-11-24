@@ -1,23 +1,24 @@
 import React from "react";
-import Caroussel from "./Main/Caroussel";
 import Header from "./Main/Header";
 import TopBar from "./Main/TopBar";
-import Featured from "./Main/Featured";
-import BackTop from "./Main/BackTop";
 import AboutSection from "./Main/AboutSection";
-import Location from "./Main/Location";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./Main/Main";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
-    <>
+    <Router>
       <TopBar />
       <Header />
-      <Caroussel />
-      <Featured />
-      <AboutSection />
-      <Location />
-      <BackTop />
-    </>
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+
+        <Route path="/about" element={<AboutSection />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

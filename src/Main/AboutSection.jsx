@@ -9,7 +9,7 @@ export default function AboutSection() {
             <img
               src="assets/img/group-logos.png"
               className="img-fluid"
-              alt="about image"
+              alt="the piramid group affiliates"
             />
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0 content">

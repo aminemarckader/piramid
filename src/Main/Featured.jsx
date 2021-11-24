@@ -1,5 +1,6 @@
 import React from "react";
 import { GiCommercialAirplane, GiCargoShip, GiRoad } from "react-icons/gi";
+import { Link } from "react-router-dom";
 export default function Featured() {
   return (
     <section id="featured" className="featured">
@@ -11,7 +12,7 @@ export default function Featured() {
                 <GiCargoShip />
               </i>
               <h3>
-                <a href="#">Lorem Ipsum</a>
+                <Link to="/">Lorem Ipsum</Link>
               </h3>
               <p>
                 Voluptatum deleniti atque corrupti quos dolores et quas
@@ -25,7 +26,7 @@ export default function Featured() {
                 <GiCommercialAirplane />
               </i>
               <h3>
-                <a href="#">Dolor Sitema</a>
+                <Link to="/">Dolor Sitema</Link>
               </h3>
               <p>
                 Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -39,7 +40,7 @@ export default function Featured() {
                 <GiRoad />
               </i>
               <h3>
-                <a href="#">Sed ut perspiciatis</a>
+                <Link to="/">Sed ut perspiciatis</Link>
               </h3>
               <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse

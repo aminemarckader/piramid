@@ -11,6 +11,11 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  scrollbar-width: none;
+  
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -116,7 +121,6 @@ h6 {
   transition: all 0.5s;
   background: #fff;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
 
 #header .logo h1 {
@@ -2102,14 +2106,14 @@ section {
   font-size: 16px;
   padding: 0 30px;
   margin: 3px;
-  background: #e96b56;
+  background: #00a1de;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #e6573f;
+  background: #0b4393;
 }
 
 #footer .footer-top {
@@ -2155,7 +2159,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #e96b56;
+  background: #00a1de;
   color: #fff;
   text-decoration: none;
 }
@@ -2181,7 +2185,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ec7f6d;
+  color: #00a1de;
   font-size: 18px;
   line-height: 1;
 }
@@ -2204,7 +2208,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #e96b56;
+  color: #00a1de;
 }
 
 #footer .footer-top .footer-contact {
